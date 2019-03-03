@@ -1,0 +1,6 @@
+<p>
+  news-list works!
+</p>
+ <div class="div1" *ngFor=" let obj of newsListAray">
+   <app-news-item [newsListObj]="obj"  (newsItem)="getDataNewsItem($event)"></app-news-item>
+ </div>

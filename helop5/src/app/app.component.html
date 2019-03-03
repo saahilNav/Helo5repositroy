@@ -1,0 +1,11 @@
+
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <div class="divApp1">
+  <app-news-list (childApToParent)="getDatFromNewsList($event)"></app-news-list></div>
+
+  <div class="divApp2"><app-news-details [newsDetailObj]= "valueApComponent"  ></app-news-details></div>
+  
+  <!-- <div *ngIf="valueApComponent"> {{valueApComponent.Summary}}</div> -->
+ 
